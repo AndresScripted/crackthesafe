@@ -4,16 +4,28 @@
 
 //GLOBAL VARIABLES
 /* global $ */
+var randomNumber1 = Math.random();
+console.log(randomNumber1);
+var randomNumber2 = Math.random();
+var randomNumber3 = Math.random();
+var randomNumber4 = Math.random();
 
+let numberGuess1 = " ";
+let numberGuess2 = " ";
+let numberGuess3 = " ";
+let numberGuess4 = " ";
+
+let numbersCorrect = 0;
+let numbersInPlace = 0;
 
 
 // DOCUMENT READY FUNCTION BELOW
 $("button").click(function() {
     
-    var guess1 = $("#number1").val();
-    var guess2 = $("#number2").val();
-    var guess3 = $("#number3").val();
-    var guess4 = $("#number4").val();
-    $("#userChoice").text(guess1+ guess2+ guess3+guess4);
+    numberGuess1 = $("#number1").val();
+    numberGuess2 = $("#number2").val();
+    numberGuess3 = $("#number3").val();
+    numberGuess4 = $("#number4").val();
+    $("#userChoice").text(numberGuess1+ " " + numberGuess2 + " " + numberGuess3 + " " + numberGuess4);
     
 });
